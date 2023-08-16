@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: rgb(255, 136, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8%;
+}
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.navbar-link:hover {
+  color: #ff4d00;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: url("/public/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.hero-subheading {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4d00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #e63900;
+}
+/* Grid Section */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #ff4d00 solid 1px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-profile {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Footer */
+.footer {
+    background-color: #e63900;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  .footer-link:hover {
+    color: #FF4D00;
+  }
